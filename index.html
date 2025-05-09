@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>taskmanager - karol nowakowski</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>github</h1>
+    <section class="taskManager">
+        <header class="card">
+          <h1>Menadżer zadań</h1>
+          <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Dodaj zadanie..">
+            <button type="submit">Dodaj zadanie</button>
+          </form>
+        </header>
+      
+        <section id="taskContainer"></section>
+    </section>
+    <div class="confirm">
+        <h1>Potwierdź swoje działania</h1>
+        <p>Czy jesteś pewny że chcesz usunąć to zadanie?</p>
+        <button class="cancel">Odrzuć</button>
+        <button autofocus class="confirmed">Potwierdź</button>
+    </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
